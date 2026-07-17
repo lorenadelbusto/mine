@@ -1,3 +1,5 @@
+import ChatAssistant from "./ChatAssistant";
+
 const expertise = [
   { n: "01", title: "Estrategia y diseño de productos", text: "De la necesidad a una propuesta de valor clara, priorizada y lista para evolucionar." },
   { n: "02", title: "Aprendizaje corporativo", text: "Programas y experiencias que conectan conocimiento, personas y desafíos organizacionales." },
@@ -92,6 +94,7 @@ export default function Home() {
       </section>
 
       <footer><a className="brand" href="#inicio"><span>L</span><b>Lorena del Busto</b></a><p>Integrar para Crear.</p><div><a href="#inicio">Volver arriba ↑</a></div><small>© 2026 Lorena del Busto</small></footer>
+      <ChatAssistant />
     </main>
   );
 }

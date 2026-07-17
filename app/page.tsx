@@ -1,0 +1,97 @@
+const expertise = [
+  { n: "01", title: "Estrategia y diseño de productos", text: "De la necesidad a una propuesta de valor clara, priorizada y lista para evolucionar." },
+  { n: "02", title: "Aprendizaje corporativo", text: "Programas y experiencias que conectan conocimiento, personas y desafíos organizacionales." },
+  { n: "03", title: "Pricing y modelos de negocio", text: "Decisiones que equilibran valor, alcance, márgenes y sostenibilidad económica." },
+  { n: "04", title: "Innovación y procesos", text: "Ideas convertidas en nuevas soluciones, formas de trabajo e iniciativas implementables." },
+  { n: "05", title: "Marketing y posicionamiento", text: "Narrativas y experiencias que hacen visible el valor real de un producto." },
+  { n: "06", title: "Emprendimiento digital", text: "Conceptos orientados al mercado, validados con foco en experiencia, tecnología y propósito." },
+];
+
+const steps = ["Comprender", "Conectar", "Definir", "Crear", "Implementar", "Evolucionar"];
+
+const cases = [
+  { type: "Producto · AI FashionTech", title: "FIVRA", text: "De una necesidad cotidiana a un concepto de producto digital que conecta estilo personal, inteligencia artificial y experiencia de usuario.", tags: ["Visión de producto", "Validación", "UX"] },
+  { type: "Aprendizaje · Organizaciones", title: "Soluciones corporativas", text: "Programas construidos desde el desafío del negocio, articulando contenidos, especialistas y una experiencia aplicable al trabajo.", tags: ["Diseño curricular", "Experiencia", "Gestión"] },
+  { type: "Estrategia · Viabilidad", title: "Propuestas que funcionan", text: "Estructuración de productos y paquetes conectando la promesa de valor con costos, precio, alcance y capacidad de ejecución.", tags: ["Pricing", "Propuesta de valor", "Implementación"] },
+];
+
+export default function Home() {
+  return (
+    <main>
+      <nav className="nav" aria-label="Navegación principal">
+        <a className="brand" href="#inicio" aria-label="Lorena del Busto, inicio"><span>L</span><b>Lorena del Busto</b></a>
+        <div className="navlinks">
+          <a href="#enfoque">Enfoque</a><a href="#expertise">Expertise</a><a href="#metodo">Método</a><a href="#proyectos">Proyectos</a>
+        </div>
+        <a className="navcta" href="#contacto">Conversemos <span>↗</span></a>
+      </nav>
+
+      <section className="hero" id="inicio">
+        <div className="hero-copy">
+          <p className="eyebrow"><span /> Estrategia · diseño · implementación</p>
+          <h1>Integrar<br />para <em>Crear.</em></h1>
+          <p className="hero-lead">Conecto estrategia, creatividad y conocimiento para transformar necesidades complejas en productos, experiencias y soluciones con impacto.</p>
+          <div className="hero-actions"><a className="button primary" href="#enfoque">Descubre mi enfoque <span>↓</span></a><a className="text-link" href="#proyectos">Explorar proyectos <span>↗</span></a></div>
+        </div>
+        <div className="hero-art" aria-hidden="true">
+          <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="coral-disc" /><div className="blue-disc" />
+          <div className="art-word word-a">estrategia</div><div className="art-word word-b">creatividad</div><div className="art-word word-c">personas</div><div className="art-center">crear</div>
+        </div>
+        <div className="hero-index"><span>01</span><i /><p>Ordenar la complejidad.<br />Encontrar conexiones.<br />Crear algo que funciona.</p></div>
+      </section>
+
+      <section className="manifesto section" id="enfoque">
+        <div className="section-tag">01 — Mi enfoque</div>
+        <div className="manifesto-main">
+          <p className="kicker">Una forma de mirar</p>
+          <h2>Las mejores soluciones no nacen de una sola disciplina.</h2>
+        </div>
+        <div className="manifesto-copy">
+          <p>Me interesa comprender qué hay detrás de cada desafío. Conecto las necesidades de las personas, los objetivos del negocio y las posibilidades de la solución para diseñar propuestas que puedan llevarse a la práctica.</p>
+          <p>Mi fortaleza no está solo en conocer distintas áreas, sino en <strong>encontrar relaciones entre ellas</strong>: hacer visible lo que antes estaba fragmentado y convertirlo en una solución coherente, relevante y realizable.</p>
+        </div>
+        <div className="connections" aria-label="Conexiones que integro">
+          <div>Estrategia <span>×</span> Creatividad</div><div>Negocio <span>×</span> Personas</div><div>Diseño <span>×</span> Ejecución</div><div>Tecnología <span>×</span> Propósito</div>
+        </div>
+      </section>
+
+      <section className="expertise section" id="expertise">
+        <div className="section-tag light">02 — Disciplinas que integro</div>
+        <div className="section-heading inverse"><p className="kicker">Un sistema conectado</p><h2>Distintas perspectivas.<br /><em>Una sola solución.</em></h2><p>Cada disciplina aporta una lente. El valor aparece cuando trabajan juntas.</p></div>
+        <div className="expertise-grid">
+          {expertise.map((item) => <article key={item.n}><span>{item.n}</span><h3>{item.title}</h3><p>{item.text}</p><i>↗</i></article>)}
+        </div>
+      </section>
+
+      <section className="method section" id="metodo">
+        <div className="section-tag">03 — Mi manera de trabajar</div>
+        <div className="section-heading"><p className="kicker">De la pregunta al impacto</p><h2>Un proceso para<br /><em>hacer que ocurra.</em></h2><p>Una secuencia flexible para comprender antes de decidir, crear con criterio y aprender de la implementación.</p></div>
+        <ol className="timeline">
+          {steps.map((step, i) => <li key={step}><span>0{i + 1}</span><div>{step}</div><p>{["Investigar el contexto, las personas y el verdadero desafío.","Relacionar perspectivas que inicialmente parecen separadas.","Ordenar la complejidad y establecer prioridades claras.","Diseñar la propuesta, experiencia, producto o programa.","Traducir el diseño en decisiones y acciones concretas.","Evaluar resultados, aprender y mejorar la solución."][i]}</p></li>)}
+        </ol>
+      </section>
+
+      <section className="projects section" id="proyectos">
+        <div className="section-tag">04 — Proyectos seleccionados</div>
+        <div className="section-heading"><p className="kicker">El enfoque en acción</p><h2>Conectar ideas.<br /><em>Construir evidencia.</em></h2></div>
+        <div className="case-list">
+          {cases.map((c, i) => <article className="case" key={c.title}>
+            <div className={`case-visual visual-${i + 1}`}><span>0{i + 1}</span><div className="case-shape"><i /><b /></div></div>
+            <div className="case-copy"><p className="case-type">{c.type}</p><h3>{c.title}</h3><p>{c.text}</p><div className="tags">{c.tags.map(t => <span key={t}>{t}</span>)}</div><a href="#contacto">Conocer el proyecto <span>↗</span></a></div>
+          </article>)}
+        </div>
+      </section>
+
+      <section className="about section" id="sobre-mi">
+        <div className="about-portrait" aria-label="Espacio para retrato de Lorena"><div className="portrait-initial">L</div><span>Estratégica</span><span>Creativa</span><span>Curiosa</span></div>
+        <div className="about-copy"><div className="section-tag light">05 — Sobre mí</div><p className="kicker">Lorena del Busto</p><h2>Una mirada estructurada.<br /><em>Una sensibilidad creativa.</em></h2><p>He trabajado en espacios donde confluyen producto, aprendizaje, marketing, pricing, operaciones, innovación y personas. Esa experiencia me enseñó a observar los desafíos desde distintos ángulos y a reconocer las conexiones que hacen posible una mejor solución.</p><p>Mi vínculo con el canto y la expresión artística complementa esa mirada: me recuerda que crear también implica escuchar, interpretar y dar forma a algo que antes no existía.</p><a className="text-link light-link" href="#contacto">Conoce más sobre mi trayectoria <span>↗</span></a></div>
+      </section>
+
+      <section className="contact section" id="contacto">
+        <p className="kicker">¿Creamos algo juntos?</p><h2>Conversemos sobre<br /><em>lo que quieres hacer posible.</em></h2><p>Productos, experiencias, programas, innovación o una idea que necesita tomar forma.</p><a className="button primary" href="mailto:hola@lorenadelbusto.com">hola@lorenadelbusto.com <span>↗</span></a>
+      </section>
+
+      <footer><a className="brand" href="#inicio"><span>L</span><b>Lorena del Busto</b></a><p>Integrar para Crear.</p><div><a href="#inicio">Volver arriba ↑</a></div><small>© 2026 Lorena del Busto</small></footer>
+    </main>
+  );
+}

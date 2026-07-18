@@ -35,3 +35,11 @@ pnpm start
 - CSS
 
 El asistente conversacional funciona en el navegador y no requiere claves de API.
+
+## Formulario de contacto con Resend
+
+Configura estas variables privadas en Vercel:
+
+- `RESEND_API_KEY`: clave de API de Resend.
+- `CONTACT_EMAIL`: dirección que recibirá las consultas.
+- `RESEND_FROM`: remitente de un dominio verificado, por ejemplo `Web Lorena <contacto@tudominio.com>`. Es opcional durante las pruebas.

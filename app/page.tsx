@@ -1,4 +1,5 @@
 import ChatAssistant from "./ChatAssistant";
+import ContactForm from "./ContactForm";
 
 const expertise = [
   { n: "01", title: "Estrategia y diseño de productos", text: "De la necesidad a una propuesta de valor clara, priorizada y lista para evolucionar." },
@@ -90,7 +91,8 @@ export default function Home() {
       </section>
 
       <section className="contact section" id="contacto">
-        <p className="kicker">¿Creamos algo juntos?</p><h2>Conversemos sobre<br /><em>lo que quieres hacer posible.</em></h2><p>Productos, experiencias, programas, innovación o una idea que necesita tomar forma.</p><a className="button primary" href="mailto:hola@lorenadelbusto.com">hola@lorenadelbusto.com <span>↗</span></a>
+        <div className="contact-intro"><p className="kicker">¿Creamos algo juntos?</p><h2>Conversemos sobre<br /><em>lo que quieres hacer posible.</em></h2><p>Productos, experiencias, programas, innovación o una idea que necesita tomar forma.</p><a href="mailto:hola@lorenadelbusto.com">hola@lorenadelbusto.com <span>↗</span></a></div>
+        <ContactForm />
       </section>
 
       <footer><a className="brand" href="#inicio"><span>L</span><b>Lorena del Busto</b></a><p>Integrar para Crear.</p><div><a href="#inicio">Volver arriba ↑</a></div><small>© 2026 Lorena del Busto</small></footer>

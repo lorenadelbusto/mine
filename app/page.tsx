@@ -53,7 +53,12 @@ export default function Home() {
         <div className="section-tag">01 — Mi enfoque</div>
         <div className="manifesto-main"><p className="kicker">Una forma de mirar</p><h2>Las mejores soluciones no nacen de una sola disciplina.</h2></div>
         <div className="manifesto-copy"><p>Me interesa comprender qué hay detrás de cada desafío. Conecto las necesidades de las personas, los objetivos del negocio y las posibilidades de la solución para diseñar propuestas que puedan llevarse a la práctica.</p><p>Mi fortaleza no está solo en conocer distintas áreas, sino en <strong>encontrar relaciones entre ellas</strong>: hacer visible lo que antes estaba fragmentado y convertirlo en una solución coherente, relevante y realizable.</p></div>
-        <div className="connections" aria-label="Conexiones que integro"><div>Estrategia <span>×</span> Creatividad</div><div>Negocio <span>×</span> Personas</div><div>Diseño <span>×</span> Ejecución</div><div>Tecnología <span>×</span> Propósito</div></div>
+        <div className="connections" aria-label="Conexiones que integro">
+          <div className="connection-card"><span className="connection-index">01</span><p><strong>Estrategia</strong><i>×</i><strong>Creatividad</strong></p><small>Dirección con imaginación</small></div>
+          <div className="connection-card"><span className="connection-index">02</span><p><strong>Negocio</strong><i>×</i><strong>Personas</strong></p><small>Valor que sí importa</small></div>
+          <div className="connection-card"><span className="connection-index">03</span><p><strong>Diseño</strong><i>×</i><strong>Ejecución</strong></p><small>Ideas que toman forma</small></div>
+          <div className="connection-card"><span className="connection-index">04</span><p><strong>Tecnología</strong><i>×</i><strong>Propósito</strong></p><small>Posibilidad con sentido</small></div>
+        </div>
       </section>
 
       <IntegrationMap />

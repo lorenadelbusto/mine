@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="Navegación principal">
-        <a className="brand" href="#inicio" aria-label="Lorena del Busto, inicio"><span>L</span><b>Lorena del Busto</b></a>
+        <a className="brand" href="#inicio" aria-label="Lorena del Busto, inicio"><span className="brand-logo" aria-hidden="true" /></a>
         <div className="navlinks"><a href="#enfoque">Enfoque</a><a href="#consultoria">Consultoría</a><a href="#proyectos">Proyectos</a><a href="#ideas">Ideas</a></div>
         <a className="navcta" href="#contacto">Conversemos <span>↗</span></a>
       </nav>
@@ -111,7 +111,7 @@ export default function Home() {
         <ContactForm />
       </section>
 
-      <footer><a className="brand" href="#inicio"><span>L</span><b>Lorena del Busto</b></a><p>Integrar para Crear.</p><div><a href="#ideas">Ideas</a><a href="#consultoria">Consultoría</a><a href="#inicio">Volver arriba ↑</a></div><small>© 2026 Lorena del Busto</small></footer>
+      <footer><a className="brand footer-brand" href="#inicio" aria-label="Lorena del Busto, volver al inicio"><span className="brand-logo" aria-hidden="true" /></a><p>Integrar para Crear.</p><div><a href="#ideas">Ideas</a><a href="#consultoria">Consultoría</a><a href="#inicio">Volver arriba ↑</a></div><small>© 2026 Lorena del Busto</small></footer>
       <ChatAssistant />
     </main>
   );

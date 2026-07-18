@@ -29,7 +29,7 @@ export async function POST(request: Request) {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
       body: JSON.stringify({
-        from, to: [recipient], reply_to: email, subject: `Nueva consulta web: ${topic}`,
+        from, to: [recipient], subject: `Nueva consulta web: ${topic}`,
         html: `<h2>Nueva consulta desde Integrar para Crear</h2><p><strong>Nombre:</strong> ${escapeHtml(name)}</p><p><strong>Email:</strong> ${escapeHtml(email)}</p><p><strong>Empresa o proyecto:</strong> ${escapeHtml(company || "No indicado")}</p><p><strong>Tema:</strong> ${escapeHtml(topic)}</p><p><strong>Mensaje:</strong></p><p style="white-space:pre-wrap">${escapeHtml(message)}</p>`,
       }),
     });

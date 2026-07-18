@@ -68,3 +68,7 @@ body{font-size:15px;line-height:1.55}p{font-size:15px;line-height:1.58}.section{
 /* Official Lorena del Busto wordmark */
 .brand>.brand-logo{display:block;width:168px;height:48px;border:0;border-radius:0;background:currentColor;font:inherit;-webkit-mask:url("/brand-logo.svg") center/contain no-repeat;mask:url("/brand-logo.svg") center/contain no-repeat}.nav .brand{color:#721165}.footer-brand{color:#efb9ee}.footer-brand>.brand-logo{width:190px;height:58px}.brand:focus-visible{outline:2px solid #e76127;outline-offset:5px}
 @media(max-width:560px){.brand>.brand-logo{width:138px;height:40px}.footer-brand>.brand-logo{width:158px;height:48px}}
+
+/* Prevent automatic mobile darkening or color reinterpretation */
+html,body{color-scheme:only light!important;background-color:#fbf9e1;-webkit-print-color-adjust:exact;print-color-adjust:exact}input,select,textarea,button{color-scheme:only light}
+@media(prefers-color-scheme:dark){html,body{background:#fbf9e1;color:#721165}.nav,.manifesto,.consulting,.method,.ideas,.contact,.contact-form,.service-grid article,.map-shell,.case{background:#fbf9e1}.integration-map,.projects,.connections .connection-card:nth-child(1),.articles-grid article{background:#efb9ee}.expertise,.hero-art,.map-visual,.about,footer,.chat-head{background:#01013a}}

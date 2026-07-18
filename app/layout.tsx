@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playwrite_DK_Loopet, Raleway } from "next/font/google";
 import "./globals.css";
 
@@ -13,6 +13,13 @@ const playwrite = Playwrite_DK_Loopet({
   variable: "--font-playwrite",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  colorScheme: "light",
+  themeColor: "#fbf9e1",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mine-flax-five.vercel.app"),

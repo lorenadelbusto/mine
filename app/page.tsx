@@ -1,5 +1,6 @@
 import ChatAssistant from "./ChatAssistant";
 import ContactForm from "./ContactForm";
+import IntegrationMap from "./IntegrationMap";
 
 const expertise = [
   { n: "01", title: "Estrategia y diseño de productos", text: "De la necesidad a una propuesta de valor clara, priorizada y lista para evolucionar." },
@@ -42,6 +43,7 @@ export default function Home() {
         </div>
         <div className="hero-art" aria-hidden="true">
           <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="coral-disc" /><div className="blue-disc" />
+          <div className="art-thread thread-one" /><div className="art-thread thread-two" /><div className="art-node art-node-one" /><div className="art-node art-node-two" /><div className="art-node art-node-three" />
           <div className="art-word word-a">estrategia</div><div className="art-word word-b">creatividad</div><div className="art-word word-c">personas</div><div className="art-center">crear</div>
         </div>
         <div className="hero-index"><span>01</span><i /><p>Ordenar la complejidad.<br />Encontrar conexiones.<br />Crear algo que funciona.</p></div>
@@ -53,6 +55,8 @@ export default function Home() {
         <div className="manifesto-copy"><p>Me interesa comprender qué hay detrás de cada desafío. Conecto las necesidades de las personas, los objetivos del negocio y las posibilidades de la solución para diseñar propuestas que puedan llevarse a la práctica.</p><p>Mi fortaleza no está solo en conocer distintas áreas, sino en <strong>encontrar relaciones entre ellas</strong>: hacer visible lo que antes estaba fragmentado y convertirlo en una solución coherente, relevante y realizable.</p></div>
         <div className="connections" aria-label="Conexiones que integro"><div>Estrategia <span>×</span> Creatividad</div><div>Negocio <span>×</span> Personas</div><div>Diseño <span>×</span> Ejecución</div><div>Tecnología <span>×</span> Propósito</div></div>
       </section>
+
+      <IntegrationMap />
 
       <section className="expertise section" id="expertise">
         <div className="section-tag light">02 — Disciplinas que integro</div>

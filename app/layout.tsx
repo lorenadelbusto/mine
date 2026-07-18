@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lorena del Busto — Integrar para Crear",
-  description: "Estrategia, creatividad y conocimiento conectados para diseñar productos, experiencias y soluciones con impacto.",
+  title: "Lorena del Busto — Estrategia, producto y consultoría",
+  description: "Integro estrategia, creatividad y conocimiento para diseñar productos, experiencias, programas y soluciones con impacto.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

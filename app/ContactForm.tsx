@@ -42,6 +42,7 @@ export default function ContactForm() {
       <label>¿En qué te gustaría que trabajemos?
         <select name="topic" defaultValue="" required>
           <option value="" disabled>Selecciona una opción</option>
+          <option>Sesión de consultoría estratégica</option><option>Consultoría por proyecto</option><option>Acompañamiento a un equipo</option>
           <option>Diseño de producto</option><option>Aprendizaje corporativo</option><option>Pricing y modelo de negocio</option>
           <option>Innovación y procesos</option><option>Marketing y posicionamiento</option><option>Alianza o colaboración</option><option>Otro</option>
         </select>

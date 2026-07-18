@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
+import { Playwrite_DK_Loopet, Raleway } from "next/font/google";
 import "./globals.css";
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--font-raleway",
+  display: "swap",
+});
+
+const playwrite = Playwrite_DK_Loopet({
+  weight: "variable",
+  variable: "--font-playwrite",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mine-flax-five.vercel.app"),
@@ -21,5 +34,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="es"><body>{children}</body></html>;
+  return <html lang="es"><body className={`${raleway.variable} ${playwrite.variable}`}>{children}</body></html>;
 }
